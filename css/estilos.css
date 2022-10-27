@@ -4,10 +4,28 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.mensaje{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+
+
+}
+.bt-msj{
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
 
 :root {
     --main-color: #000000;
-    --main-modal-color: rgba(2, 1, 1, 0.555);
+    --main-modal-color: rgba(206, 12, 86, 0.555);
     --second-color: #b7b7b7;
     --second-modal-color: rgb(0, 0, 0);
 }

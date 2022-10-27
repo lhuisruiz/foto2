@@ -1,16 +1,36 @@
 const evento = document.getElementById('send')
-const enviarFormulario =() => {
+const enviarFormulario = () => {
 
-        let numero = document.getElementById('numero').value;
-       
-        
-var win= window.open(`https://wa.me/54${numero}?text=App:%20 
-https://bit.ly/3gAGP0I`,'_blank');       
-//
+    let numero = document.getElementById('numero').value;
+
+
+    var win = window.open(`https://wa.me/54${numero}?text=App:%20 
+https://bit.ly/3gAGP0I`, '_blank');
+    //
 }
 evento.addEventListener('click', enviarFormulario)
 
-
+//Numero de pagina
+function modal_009() {
+    Swal.fire({
+        html: '<h3 class="bm">ivan zarate Foto2</h3>',
+        //tamaño
+        imageWidth: 300,
+        imageHeight: 300,
+        //cerrar
+        padding: '1rem',
+        showCloseButton: true,
+        showConfirmButton: false,
+        background: 'linear-gradient(#000,#000)',
+        //ajustes
+        showCloseButton: true,
+        timer: '5000',
+        timerProgressBar: true,
+        customClass: {
+            actions: 'content',
+        }
+    })
+}
 
 //Compartir
 const shareBtn = document.getElementById('shareBtn')
@@ -33,19 +53,52 @@ shareBtn.addEventListener('click', event => {
 
 
 
- function modal_05() {
+function modal_05() {
     Swal.fire({
-        html: '<h3 class="bm">Black Momets</h3>',
+        html: '<h3  onclick="modal_009();" class="bm">Black Momets</h3>',
         imageUrl: 'https://res.cloudinary.com/lhuis/image/upload/v1666754485/iconos/fkppmxoe9qs9xhggmzcc.png',
-       //tamaño
+        //tamaño
         imageWidth: 300,
         imageHeight: 300,
         //cerrar
-        padding:'1rem',
-        showCloseButton:true,
-        showConfirmButton:false,
-        background:'linear-gradient(#000,#000)',
-        
+        padding: '1rem',
+        showCloseButton: true,
+        showConfirmButton: false,
+        background: 'linear-gradient(#000,#000)',
+
     })
- }
- 
+}
+
+// automatica
+setTimeout(function () {
+Swal.fire({
+    
+    html: '<div class="mensaje">' +
+        '<h3 class="bm">Black Momets</h3>' +
+        '<p>Foto disponible el <b>4 de octubre</b>, Si no aparecen escribeme al </p>' +
+        '<a href="https://wa.me/541144382987" target="_blank"><button class="bt-msj" >+54 11 4438-2987</button></a>' +
+        '</div>',
+     /*
+        html: '<div class="mensaje">' +
+        '<h3 class="bm">Black Momets</h3>' +
+        '<p>Fotos listas, gracias por la confianza</p>' +
+        
+        '</div>',
+    */
+    //tamaño
+    imageWidth: 300,
+    imageHeight: 300,
+    //cerrar
+    padding: '1rem',
+    showCloseButton: true,
+    showConfirmButton: false,
+    background: 'linear-gradient(#000,#000)',
+    //ajustes
+    showCloseButton: true,
+    timer: '5000',
+    timerProgressBar: true,
+    customClass: {
+        actions: 'content',
+    }
+})
+}, 1000 * 2);
