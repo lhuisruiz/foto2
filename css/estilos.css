@@ -23,6 +23,55 @@
     cursor: pointer;
 }
 
+.mensaje-2{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+
+
+}
+.bt-msj-2{
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #000;
+color: #b7b7b7;    
+}
+.bm-2-h3{
+   
+    font-size: 40px;
+}
+
+.bm-2-p{
+   
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.bm-4{
+    font-size: 40px;
+}
+.bm-2-pp{
+    font-size: 15px;
+    margin: 20px;
+}
+@media (max-width: 400px){
+    .bm-2-h3{
+       
+        font-size: 30px;
+    }
+    .bm-2-p{
+        color: rgba(0, 0, 0, 0.897);
+        font-size: 15px;
+        margin: 10px;
+    }
+}
 :root {
     --main-color: #000000;
     --main-modal-color: rgba(206, 12, 86, 0.555);
@@ -63,7 +112,7 @@ header {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(249, 94%, 43%, 0.555), hsla(0, 0%, 0%, 0.568)), url(../img/portada.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(251, 97%, 45%, 0.527), hsla(0, 0%, 0%, 0.5)), url(../img/portada.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.527), hsla(0, 0%, 0%, 0.5)), url(../img/b.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -596,6 +645,8 @@ p {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 
 
@@ -789,3 +840,5 @@ p {
 
 }
 */
+
+/*Cargando*/
