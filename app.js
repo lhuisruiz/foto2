@@ -1,3 +1,4 @@
+
 const evento = document.getElementById('send')
 const enviarFormulario = () => {
 
@@ -16,7 +17,7 @@ shareBtn.addEventListener('click', event => {
     if (navigator.share) {
         //drive
         navigator.share({
-            text: 'Por favor, lea este gran artículo: ',
+            text: 'Instala la App web "Mis fotos": ',
             url: 'https://bit.ly/3gAGP0I'
         }).then(() => {
             console.log('Gracias por compartir mis fotos!');
@@ -30,9 +31,9 @@ shareBtn.addEventListener('click', event => {
 
 
 //Numero de pagina
-function modal_009() {
+function modal_09() {
     Swal.fire({
-        html: '<h3 class="bm">ivan zarate Foto2</h3>',
+        html: '<h3 class="bm">ivan zarate cumple 14 Foto2</h3>',
         //tamaño
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +74,7 @@ Swal.fire({
     padding: '1rem',
     showCloseButton: true,
     showConfirmButton: false,
-    background: 'linear-gradient(#000,#000)',
+    background: '#0e0e0e',
     //ajustes
     showCloseButton: true,
     timer: '3000',
@@ -84,26 +85,20 @@ Swal.fire({
 })
 
 
-//Abrir fotos automaticamante
+
+//Abrir fotos
 let boton = document.querySelector('#boton');
 boton.addEventListener('click', function () {
-
-    setTimeout(function () {
         location.href = "https://drive.google.com/drive/folders/1i2O5zPdlkUWG-3gJilWHg-Uude29nrNZ?usp=sharing"
-    }, 1000 * 3)
-
-
-
 });
-
-
-//ventana automaticamante
+//ventana descargar todo
 function modal_08() {
     Swal.fire({
-        html: '<div class="mensaje">' +
-            '<h3 class="bm-2-h3">Black Momets</h3>' +
-            '<p class="bm-2-p">Tus Fotos Al Mejor Precio. </p>' +
-            '</div>',
+        html: '<div class="mensaje-2">' +
+        '<h3 class="bm-4">Black Momets</h3>' +
+        '<p class="bm-2-pp">Tamaño de Descarga, <b>3GB De Fotos</b>, Procura tener espacio en el dispositivo, Se descargara todo en formato rar o zip, eso lo podes encontar en la Play store o app store </p>' +
+        '<a href="https://download852.mediafire.com/13zrmsyicrhg/aoypndnm4vgfers/fotos.rar" target="_blank"><button class="bt-msj" >Si, Descargar Todo <i class="fa-solid fa-download blu"></button></a>' +
+        '</div>',
         //tamaño
         imageWidth: 400,
         imageHeight: 500,
@@ -111,27 +106,11 @@ function modal_08() {
         padding: '1rem',
         showCloseButton: true,
         showConfirmButton: false,
-        background: '#000',
+        background: '#0e0e0e',
         //ajustes
         showCloseButton: true,
-        timer: '5000',
         timerProgressBar: true,
         timerProgressBar: true,
-  didOpen: () => {
-    Swal.showLoading()
-    const b = Swal.getHtmlContainer().querySelector('b')
-    timerInterval = setInterval(() => {
-      b.textContent = Swal.getTimerLeft()
-    }, 100)
-  },
-  willClose: () => {
-    clearInterval(timerInterval)
-  }
-}).then((result) => {
-  /* Read more about handling dismissals below */
-  if (result.dismiss === Swal.DismissReason.timer) {
-    console.log('I was closed by the timer')
-  }
 })
 }
 
@@ -140,8 +119,8 @@ function modal_08() {
 // Foto lhuis ruiz
 function modal_05() {
     Swal.fire({
-        html: '<h3>Black Momets</h3>'+
-        '<p>Fotos al mejor precio.</p>',
+        html: '<h3 class="bm-4" onclick="modal_09();">Black Momets</h3>'+
+        '<p class = "bm-2-pp">Fotos al mejor precio.</p>',
         imageUrl: 'https://res.cloudinary.com/lhuis/image/upload/v1666754485/iconos/fkppmxoe9qs9xhggmzcc.png',
         //tamaño
         imageWidth: 300,
@@ -151,6 +130,26 @@ function modal_05() {
         showCloseButton: true,
         showConfirmButton: false,
         background: 'linear-gradient(#000,#000)',
+
+    })
+}
+
+// Foto lhuis ruiz
+function modal_11() {
+    Swal.fire({
+        html: '<div>'+
+        '<img class = "img-misfotos" src="img/a.jpg" alt="">'+
+    '</div>'+
+        '<h3 class="bm-4">Black Momets</h3>'+
+        '<p >Fotos al mejor precio.</p>',
+        //tamaño
+        imageWidth: 300,
+        imageHeight: 500,
+        //cerrar
+        padding: '1rem',
+        showCloseButton: true,
+        showConfirmButton: false,
+        background: '#0e0e0e',
 
     })
 }
