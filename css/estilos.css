@@ -32,6 +32,29 @@
     transition: .4s ease;
 }
 
+.bt-msj-5 {
+    width: 255px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    
+    animation: parpadeo 4s linear infinite;
+    transition: .4s ease;
+}
+.ingresar{
+    color: rgb(181, 162, 245); 
+    font-weight: bold;
+}
+.privadas{
+    color: #fff;
+    font-size: 15px;
+   
+}
+
 .bt-msj:hover {
     border-radius: 20px;
     transition: .4s ease;
@@ -96,12 +119,18 @@
 
     }
     .img-misfotos{
-        max-width: 260px;
+        max-width: 250px;
     }
 }
 
 .img-misfotos {
     width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.img-misfotos2 {
+    width: 200px;
+    height: auto;
     border-radius: 10px;
     margin: 10px;
 }
@@ -999,6 +1028,7 @@ p {
     width: auto;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10px;

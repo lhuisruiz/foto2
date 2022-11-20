@@ -1,4 +1,4 @@
-//nUMERO DE PAGINA "FOTO ?"
+//NUMERO DE PAGINA "FOTO ?"
 function modal_09() {
     Swal.fire({
         html: ' <a href="https://www.mediafire.com/folder/j8r8mfnlzvoqg/Camera"><h3 class="bm">Foto2</h3></a>',
@@ -62,7 +62,9 @@ function modal_088() {
         '<button class="bt-msj" >Ver Videos<i class="fa-solid fa-video blu"></i></button></a>'+
         //CARPETA 2 otro
         '<a href="https://drive.google.com/drive/folders/1xzBmNa5J_ZhVMpihPFrxjw9mC185MffE?usp=share_link" >' + 
-        '<button class="bt-msj" >Otro<i class="fa-solid fa-folder-open blu"></i></button></a>',
+        '<button class="bt-msj" >Otraas Fotos<i class="fa-solid fa-folder-open blu"></i></button></a>'+
+        //cr2 origina
+        '<button onclick="modal_111();" class="bt-msj" style="background-color: red; color: #fff;" >cr2<i class="fa-solid fa-camera blu"></i></button>',
         imageWidth: 400,
         imageHeight: 500,
         //cerrar
@@ -76,6 +78,23 @@ function modal_088() {
         timerProgressBar: true,
     })
 }
+function modal_111() {
+    Swal.fire({
+        html: '<div>' +
+            '<img class = "img-misfotos" src="https://raw.githubusercontent.com/lhuisruiz/foto2/main/img/Lhuis.png" alt="">' +
+            '</div>' +
+            '<h3 class="bm-4">Black Momets</h3>' +
+            '<p class="privadas">Para ver las fotos cr2, privadas de ingresar el correo y contraseña <a class="ingresar" href="https://accounts.google.com/signoutoptions?continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Fu%2F0%2Fmobile%2F%3Futm_source%3Den%26pli%3D1"> *aqui* </a></p>'+
+            '<div class="pasaword">' +
+            '<a href="https://drive.google.com/drive/folders/1fjk5AAB33oV_3swFD3Hag2t_nilwbpLY?usp=share_link"><button class="bt-msj-5"  style="background-color:  red; color: #fff;" >Ver Cr2, fotos privadas </button></a>' +
+            '</div>',
+        //cerrar,
+        showCloseButton: true,
+        showConfirmButton: false,
+        background: '#0e0e0e',
+
+    })
+}
 
 //DESCARGAR TODO
 function modal_08() {
@@ -85,7 +104,7 @@ function modal_08() {
             '<p class="bm-2-pp">Tamaño de Descarga, <b>5GB De Fotos (JPG Y RAW)</b>, atravez de  mediafire... Archivo rar </p>' +
             //mediafire jpg
             '<a href="https://www.mediafire.com/file/c9k94tidau5z7cn/jpg.rar/file" target="_blank">'+
-            '<button onclick="modal_008();" class="bt-msj" style="background-color: rgb(0, 38, 255); color: #fff;" >Descargar jpg<i class="fa-solid fa-download blu"></i></button></a>' +
+            '<button class="bt-msj" style="background-color: rgb(0, 38, 255); color: #fff;" >Descargar jpg<i class="fa-solid fa-download blu"></i></button></a>' +
             //mediafire Raw
             '<a href="https://www.mediafire.com/folder/gx1fe4t41fbjr/Documents" target="_blank">'+
             '<button class="bt-msj" style="background-color: rgb(225, 0, 255); color: #fff;" > Descargar cr2<i class="fa-solid fa-download blu"></i></button></a>',           
